@@ -321,7 +321,7 @@ nav ul li a{
         width: 90%;
     }
     .left-apple,.left-pear,.left-peach,.left-plum,.left-cherry{
-        padding: 0;
+        padding-top: 80px;
     }
     .apple,.pear,.peach,.plum,.cherry{
         border-radius: 0;
