@@ -15,6 +15,10 @@
 html{
     scroll-behavior: smooth;
 }
+.margin-centeriner{
+    max-width: 1920px;
+    margin: auto;
+}
 a{
     text-decoration: none;
     color: var(--link-color);
@@ -310,7 +314,7 @@ nav ul li a{
     }
 }
 @media screen and (max-width:550px){
-        .care-abt-tree{
+    .care-abt-tree{
         padding: 0;
     }
     .tree .tree-container .tree-item{
@@ -318,5 +322,27 @@ nav ul li a{
     }
     .left-apple,.left-pear,.left-peach,.left-plum,.left-cherry{
         padding: 0;
+    }
+    .apple,.pear,.peach,.plum,.cherry{
+        border-radius: 0;
+        padding: 4px;
+    }
+    .list-style li{
+        font-size: 10px;
+    }
+    .main .right h5{
+        font-size: 15px;
+    }
+    .main .right h3{
+        font-size: 26px;
+    }
+    .main .right p{
+        font-size: 10px;
+    }
+    .tree h5{
+        font-size: 15px;
+    }
+    .tree h3{
+        font-size: 26px;
     }
 }
