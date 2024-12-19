@@ -16,7 +16,7 @@ html{
     scroll-behavior: smooth;
 }
 .margin-centeriner{
-    max-width: 1920px;
+    max-width: 1520px;
     margin: auto;
 }
 a{
@@ -54,10 +54,23 @@ nav{
     box-shadow: 0 6px 70px rgba(0, 0, 0, 0.1);
     padding: 0 80px;
     background-color: var(--navbar-color);
-    z-index: 10;
+    z-index: 999;
 }
 span{
     color: var(--span-color);
+}
+i{
+    font-size: 40px;
+}
+a i{
+    color: black;
+    transition: color .3s;
+}
+i{
+    margin: 20px;
+}
+a:hover i{
+    color: white;
 }
 .image-logo img{
     display: flex;
@@ -71,6 +84,9 @@ nav ul li a{
     margin-left: 20px;
     font-size: 20px;
     font-weight: bolder;
+}
+footer{
+    background-color: rgb(61, 122, 61);
 }
 /*przycisk na navbar*/
 #menu-toggle {
@@ -149,7 +165,7 @@ nav ul li a{
 .care-abt-tree{
     margin-top: 20px;
     padding: 90px 40px;  
-    background-color: var(--main-color); 
+    background-color: white; 
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -160,30 +176,71 @@ nav ul li a{
     align-items: center;
     padding: 90px 20px 90px 20px;
     border-radius: 20px;
+    gap: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .apple{
-    background-color: rgb(255, 166, 166);
+    /*background-color: rgb(255, 166, 166);*/
+    background-image: url(../images/background-tree-1.png);
 }
 .pear{
-    background-color: rgb(225, 255, 166);
+    /*background-color: rgb(225, 255, 166);*/
+    background-image: url(../images/background-tree-2.png);
 }
 .peach{
-    background-color:rgb(255, 227, 166);
+    /*background-color:rgb(255, 227, 166);*/
+    background-image: url(../images/background-tree-3.png);
 }
 .plum{
-    background-color:#9e85ff;
+    /*background-color:#9e85ff;*/
+    background-image: url(../images/background-tree-4.png);
 }
 .cherry{
-    background-color: rgb(156, 79, 79);
+    /*background-color: rgb(156, 79, 79);*/
+    background-image: url(../images/background-tree-5.png);
 }
 .apple img,.pear img,.peach img,.plum img,.cherry img{
-    height: 300px;
+    height: 400px;
+    width: 400px;
+    border-radius: 30px;
 }
 .left-apple,.left-pear,.left-peach,.left-plum,.left-cherry{
     display: flex;
     align-items: start;
     flex-direction: column;
-    padding: 0 60px;
+    border-radius: 5px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 10;
+}
+.title-top{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 13px;
+    backdrop-filter: blur(10px); 
+}
+.apple-title{
+    background-color: rgba(255, 166, 166, 0.9);
+}
+.pear-title{
+    background-color: rgb(225, 255, 166, 0.9);
+}
+.peach-title{
+    background-color: rgb(255, 227, 166, 0.9);
+}
+.plum-title{
+    background-color: #9d85ffdb;
+}
+.cherry-title{
+    background-color: rgb(156, 79, 79, 0.9);
+}
+.filter-list{
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 60px;
 }
 .care-abt-tree .apple .left-apple h5 span{/*glowny kolorek spanu*/
     color: rgb(255, 53, 53);
@@ -212,7 +269,21 @@ nav ul li a{
 .cherry span{
     color: rgb(117, 0, 0);
 }
-
+.footer-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px 80px;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-nav ul li a{
+    color: black;
+}
 @media screen and (max-width:1200px){
     .main .right h5{
         font-size: 18px;
@@ -242,7 +313,7 @@ nav ul li a{
 
 @media screen and (max-width:800px) {
     nav ul li a{
-        font-size: 15px;
+        font-size: 14px;
     }
     .main .right h5{
         font-size: 15px;
@@ -312,6 +383,15 @@ nav ul li a{
     .tree .tree-container .tree-item{
         width: 53%;
     }
+    i{
+        font-size:30px ;
+    }
+    .footer-nav ul li a{
+        font-size: 17px;
+    }
+    .copy-right p{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width:550px){
     .care-abt-tree{
@@ -344,5 +424,8 @@ nav ul li a{
     }
     .tree h3{
         font-size: 26px;
+    }
+    .copy-right p{
+        margin-top: 10px;
     }
 }
