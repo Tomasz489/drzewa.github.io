@@ -282,7 +282,7 @@ footer{
     gap: 20px;
 }
 .footer-nav ul li a{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 @media screen and (max-width:1200px){
     .main .right h5{
@@ -430,5 +430,10 @@ footer{
     }
     .copy-right p{
         margin-top: 10px;
+    }
+}
+@media screen and (max-width:321px){
+    .footer-nav ul{
+        flex-direction: column;
     }
 }
